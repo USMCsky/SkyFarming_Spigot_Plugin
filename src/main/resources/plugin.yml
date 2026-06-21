@@ -1,0 +1,12 @@
+name: SkyFarming
+version: '${version}'
+
+main: com.usmcsky
+api-version: '1.21'
+
+authors: [ USMCsky ]
+commands:
+  farmerbob:
+    description: Manage your personal Farmer Bob villager.
+    usage: /farmerbob <spawn|move|respawn|remove|balance>
+    aliases: [ bob ]
