@@ -9,8 +9,6 @@
 A Spigot plugin that brings automated farming and coin-based trading to your server through **Farmer Bob** — a personal villager that auto-harvests your crops and buys them for coins.
 Perfect for survival and economy servers where players want passive farming income without grinding.
 
----
-
 ## Features
 - Spawn a personal **Farmer Bob** villager tied to your account
 - Bob will **automatically harvest** crops in a radius around his location
@@ -20,13 +18,9 @@ Perfect for survival and economy servers where players want passive farming inco
 - Bob can be **moved, respawned, or removed** as needed
 - **Storage full warning** when Bob's linked chest has no room
 
----
-
 ## Requirements
 - **Minecraft/Spigot API:** `1.21` (as defined in `plugin.yml`)
 - **Java:** 21 (recommended based on modern Spigot 1.21 runtime expectations)
-
----
 
 ## Player Instructions
 1. Spawn your personal Farmer Bob:
@@ -47,8 +41,6 @@ Perfect for survival and economy servers where players want passive farming inco
    /farmerbob balance
    ```
 
----
-
 ### Commands (Players)
 - `/farmerbob spawn`  
   Spawn your personal Farmer Bob villager.
@@ -61,25 +53,16 @@ Perfect for survival and economy servers where players want passive farming inco
 - `/farmerbob balance`  
   Check your current coin balance.
 
-Alias:
-- `/bob ...`
-
----
-
 ### Auto-Harvest Behavior
 Farmer Bob automatically harvests mature crops within his range:
 - Crops are collected and either deposited into his **linked chest** or held until traded.
 - If the linked chest is **full**, Bob will warn you with a message and pause depositing until space is available.
 - Bob remains persistent and will **respawn** if accidentally killed.
 
----
-
 ### Trading With Bob
 - Approach Bob and use `/farmerbob trade` (or `/bob trade`) to open the trading interface.
 - Exchange your harvested crops for **coins**.
 - Coin balances are stored per-player and persist across sessions.
-
----
 
 ## Screenshots
 
@@ -120,14 +103,10 @@ Warning message displayed when Bob's linked chest is full and cannot accept more
   Allows usage of Farmer Bob commands.  
   **Default:** `true`
 
----
-
 ## Admin Notes
 - Main command: `farmerbob`
 - Alias: `bob`
 - Data is stored in `plugins/SkyFarming/` including player coin balances and Bob's location/chest link per player UUID.
-
----
 
 ## Troubleshooting
 - **"Only players can use this command."**
@@ -145,5 +124,3 @@ Warning message displayed when Bob's linked chest is full and cannot accept more
 
 - **Coins not updating**
   - Try trading again or rejoin the server. If the issue persists, check server logs for plugin errors.
-
----
